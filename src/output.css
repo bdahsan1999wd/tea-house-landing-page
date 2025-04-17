@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.4 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -10,9 +11,9 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-bold: 700;
-    --font-weight-extrabold: 800;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-primary: "Manrope", sans-serif;
   }
 }
 @layer base {
@@ -161,21 +162,11 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .text-center {
     text-align: center;
+  }
+  .font-primary {
+    font-family: var(--font-primary);
   }
   .text-5xl {
     font-size: var(--text-5xl);
@@ -185,38 +176,15 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .font-extrabold {
-    --tw-font-weight: var(--font-weight-extrabold);
-    font-weight: var(--font-weight-extrabold);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }

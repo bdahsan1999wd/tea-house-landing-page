@@ -1,2 +1,11 @@
+/* ----------Google Fonts Added---------- */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+/* font-family: "Manrope", sans-serif; */
 
+/* ----------Tailwind CSS Imported---------- */
 @import "tailwindcss";
+
+/* ----------Customs Styles Added---------- */
+@theme {
+  --font-primary: "Manrope", sans-serif;
+}
