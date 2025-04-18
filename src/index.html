@@ -17,9 +17,60 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-    <h1 class="text-5xl text-center font-bold font-primary"><i class="fa-solid fa-arrow-right -rotate-45"></i> Hello
-        World <i class="fa-solid fa-arrow-right -rotate-135"></i></h1>
+<body class="font-primary">
+
+    <!---------- Heading Section Added ---------->
+    <header class="max-w-[1600px] mx-auto outline-1">
+
+        <!---------- Banner Section Added ---------->
+        <div
+            class="max-w-[1300px] mx-auto outline-1 my-16 sm:my-28 flex flex-col-reverse sm:flex-row sm:justify-between px-5 sm:px-0 gap-5 sm:gap-0">
+
+            <!----- Banner Info Added ----->
+            <div class="">
+                <h1 class=" text-6xl sm:text-[80px] font-extrabold text-primary leading-tight lg:leading-normal">It's
+                    good <br>tea time at The <br>Tea House</h1>
+                <p class="text-[18px] font-medium text-secondary my-7 leading-8">Tea and Botanical Solutions Supplier
+                    Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+
+                <!----- Button Added ----->
+                <button
+                    class="text-xl font-bold bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-5 rounded-xl text-white">Explore
+                    More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+
+            </div>
+
+            <!---------- Banner Image Added ---------->
+            <div class="relative">
+
+                <!----- Banner Image ----->
+                <div class="rounded-2xl">
+                    <img class="w-full" src="../assets/images/banner.png" alt="Banner Image">
+                </div>
+
+                <!-------- Rating Card Added -------->
+                <div
+                    class="flex items-center bg-white rounded-lg shadow-lg absolute p-4 bottom-4 left-28  sm:bottom-52 sm:left-12 lg:left-28 lg:bottom-20">
+
+                    <!-- Star -->
+                    <div class="">
+                        <i class="fa-solid fa-star text-[#FFC850] text-3xl mr-3"></i>
+                    </div>
+
+                    <!-- Rating -->
+                    <div class="">
+                        <h4 class="text-primary text-3xl font-extrabold">5.00</h4>
+                        <p class="text-secondary font-semibold">Trust Pilot Ratings</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
 </body>
 
 </html>
