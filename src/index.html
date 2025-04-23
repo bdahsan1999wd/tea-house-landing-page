@@ -409,12 +409,38 @@
             </div>
 
             <!----- Copyright Text Added ----->
-            <p class="text-center mt-16 text-tertiary px-4 sm:px-0"> &copy; 2025 - All Rights Reserved by Ahsan Habib.
+            <p class="text-center mt-16 text-tertiary px-4 sm:px-0"> &copy; <span id="year-range"></span> All Rights
+                Reserved by Ahsan Habib.
             </p>
 
         </section>
 
     </footer>
+
+    <!----- JavaScript Added Create to Current Dynamic Year Update----->
+    <script>
+
+        // -----Website launch year-----
+        const createdYear = 2025;
+
+        // -----Get the current year from the system-----
+        const currentYear = new Date().getFullYear();
+
+        // -----Initialize the year range string-----
+        let yearRange = "";
+
+        // -----If the website was created this year, show only that year Otherwise, show a range like "2025–2026"-----
+        if (createdYear === currentYear) {
+            yearRange = `${createdYear}`;
+        }
+        else {
+            yearRange = `${createdYear}-${currentYear}`;
+        }
+
+        // -----Update the year range into the footer span with ID "year-range"-----
+        document.getElementById("year-range").textContent = yearRange;
+
+    </script>
 
 </body>
 
