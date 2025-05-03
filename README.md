@@ -19,11 +19,9 @@ Follow these steps to set up Tailwind CSS v4 using the CLI method.
 3.  ✅ **Configure package.json Add a build script to your package.json**
 
     ```json
-    {
-      "scripts": {
+    "scripts": {
         "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
-      }
-    }
+    },   
     ```
 
 4.  ✅ **Build the CSS Run the following command to start generating your Tailwind Output**
