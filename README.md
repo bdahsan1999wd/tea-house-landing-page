@@ -16,10 +16,6 @@ Follow these steps to set up Tailwind CSS v4 using the CLI method.
     @import "tailwindcss";
     ```
 
-    ```bash
-    npm install tailwindcss@latest @tailwindcss/cli@latest daisyui@latest
-    ```
-
 3.  ✅ **Configure package.json Add a build script to your package.json**
 
     ```json
